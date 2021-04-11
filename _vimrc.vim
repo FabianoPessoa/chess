@@ -148,4 +148,17 @@ endif
 "=========================================================
 " ---------- Configurac,a'o de Arquivos -----------------
 " ----------------------------------------------------
+:e! _vimrc.vim
+:tabnew
+:e! main.c
+:tabnew
+:e! bitboards.c
+:tabnew
+:e! defs.h
+:tabnew
+:e! ihm.c
+:tabnew
+:e! Makefile
+:tabnew
+:e! init.c
 

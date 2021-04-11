@@ -15,6 +15,7 @@ int main() {
 
 	U64 playBitBoard = 0ULL;
 
+	// Essa e' da aula anterior
 	printf("\nStart:\n\n");
 	PrintBitBoard(playBitBoard);
 
@@ -26,6 +27,27 @@ int main() {
 	printf("G2 Adicionado:\n\n");
 	PrintBitBoard(playBitBoard);
 
+	//Nova implementac,a'o
+
+	playBitBoard |= (1ULL << SQ64(D2));
+	playBitBoard |= (1ULL << SQ64(D3));
+	playBitBoard |= (1ULL << SQ64(D4));
+
+	//Novar implementac,a'o
+	printf("\n");
+	PrintBitBoard(playBitBoard);
+
+	int count = CNT(playBitBoard);
+
+	printf("Count:%d\n", count);
+	printf("\n");
+	int index = POP(&playBitBoard);
+	printf("index:%d\n",index);
+	PrintBitBoard(playBitBoard);
+	count = CNT(playBitBoard);
+	printf("Count:%d\n",count);
+
+	//retire se na'o for windows
 	getch();
 	return 0;
 }

@@ -104,6 +104,8 @@
 	// Xadrez
 	#define FR2SQ(f,r) ((21 + (f)) + ((r) * 10))
 	#define SQ64(sq120) Sq120ToSq64[sq120]
+	#define POP(b) PopBit(b)
+	#define CNT(b) CountBits(b)
 	// ********* GLOBAIS *************
 	// Conversao de quadrados de 120 e de 64
 	// variavel global extendida declarada em init.c
@@ -119,6 +121,9 @@
 	extern int ihm();
 	// bitboards.c
 	extern void PrintBitBoard(U64 bb);
+	// Novas funcoes declarada
+	extern int PopBit(U64 *bb);
+	extern int CountBits(U64 b);
 
 
 #endif
