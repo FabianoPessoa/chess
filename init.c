@@ -6,7 +6,9 @@ int Sq120ToSq64[BRD_SQ_NUM];
 int Sq64ToSq120[64];
 
 void InitSq120To64()
-{
+{	/* 
+	* Func,a'o  que faz o carregamento do nu'meros do bitmap
+	*/
 	int index = 0;
 	int file = FILE_A;
 	int rank = RANK_1;
@@ -41,5 +43,5 @@ void InitSq120To64()
 void AllInit()
 {	
 	InitSq120To64();
-	printf("\n ... ");
+	printf("\n ................\n ");
 }

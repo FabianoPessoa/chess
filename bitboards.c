@@ -24,6 +24,8 @@ int CountBits(U64 b) {
 	for(r = 0; b; r++, b &= b -1);
 	return r;
 }
+
+/* Fim de alterac,a'o aula 9 */
 void PrintBitBoard (U64 bb) {
 
 	U64 shiftMe = 1ULL;
@@ -47,11 +49,16 @@ void PrintBitBoard (U64 bb) {
 			* Cria um sq para branca e outro
 			* Para pretas.
 			*/
-			sq = FR2SQ(file,rank); /* Baseado em 120 */
-			sq64 = SQ64(sq);
+			sq = FR2SQ(file,rank); 	/* Baseado em 120 */
+			sq64 = SQ64(sq);		/* Baseado em 64  */
 			/*
 			* Imprime X se encontrar um pea'o
 			* e - se na'o.
+			* Se (shiftMe << sq64) for igual ao bitmap bb
+			* ... enta'o colocque X se na'o coloque -
+			* o operador de deslocamento consegue colocar 1
+			* num ponto determinado pelo nu'mero da casa em
+			* sq64.
 			*/
 			if ((shiftMe << sq64) & bb)
 				printf("X");

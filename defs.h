@@ -26,13 +26,13 @@
 	printf("At Line %d\n",__LINE__ ); \
 	exit(1);}
 	#endif
-
+	/* ******************************************* */
 
 
 	typedef unsigned long long U64;
 	
 	#define NAME "Vice 1.0"
-	#define BRD_SQ_NUM 120
+	#define BRD_SQ_NUM 120						/* Quantidade de casas do bitmap grande */
 	
 	#define MAXGAMEMOVE 2048
 	// //Pecas e casas notaveis
@@ -124,6 +124,5 @@
 	// Novas funcoes declarada
 	extern int PopBit(U64 *bb);
 	extern int CountBits(U64 b);
-
 
 #endif
