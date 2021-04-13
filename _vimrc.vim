@@ -148,17 +148,25 @@ endif
 "=========================================================
 " ---------- Configurac,a'o de Arquivos -----------------
 " ----------------------------------------------------
+" Abre essa configurac,a'o
 :e! _vimrc.vim
 :tabnew
+" ------Programa principal------
 :e! main.c
 :tabnew
+" ------bitboard.c------
 :e! bitboards.c
 :tabnew
-:e! defs.h
-:tabnew
+" -----------ihm-------------
 :e! ihm.c
+:tabnew
+" -----------init.c--------
+:e! init.c
+:tabnew
+" ------Definic,o'es-------
+:e! defs.h
 :tabnew
 :e! Makefile
 :tabnew
-:e! init.c
+:e! readme.txt
 

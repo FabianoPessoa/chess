@@ -106,11 +106,16 @@
 	#define SQ64(sq120) Sq120ToSq64[sq120]
 	#define POP(b) PopBit(b)
 	#define CNT(b) CountBits(b)
+	#define CLRBIT(bb,sq) ((bb) &= ClearMask[(sq)])
+	#define SETBIT(bb,sq) ((bb) |= SetMask[(sq)])
 	// ********* GLOBAIS *************
 	// Conversao de quadrados de 120 e de 64
 	// variavel global extendida declarada em init.c
 	extern int Sq120ToSq64[BRD_SQ_NUM];
 	extern int Sq64ToSq120[64];
+	extern U64 SetMask[64];
+	extern U64 ClearMask[64];
+	
 	
 	// ********** FUNCTIONS **************
 	// Prototipo definico dentro de definicoes
