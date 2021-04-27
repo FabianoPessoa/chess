@@ -35,7 +35,11 @@
 " ---- Sair do Modo de Inserc,a'o e Comando ----
 " ---sem usar o <esc>
 " E' so' fazer [Ctrl] + [
+" Ou Ctrl +c
 
+" ------ Mudar de abas no Vi ------------------
+" g (segura) + t    para ir para a aba da direita
+" g (segura) _ T    para ir para a aba da esquerda
 " -----------------------------------------
 ":vsplit
 ":tabnew

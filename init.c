@@ -1,3 +1,4 @@
+/* Co'digo init.c */
 //init.c  Arquivo de impressao do tabuleiro
 #include<stdio.h>
 #include "defs.h"

@@ -1,3 +1,4 @@
+/* Co'digo ihm.c */
 /*					ihm()						*/
 #include <stdio.h>
 #include <conio.h>
