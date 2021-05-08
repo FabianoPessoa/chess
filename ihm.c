@@ -74,6 +74,18 @@ int ihm()
 		getch();
 	}
 	//retire se na'o for windows
+	printf("\n Inserindo X em 61");
+	SETBIT(playBitBoard, 61);
+	PrintBitBoard(playBitBoard);
+	getch();
 
+	/* Nova implementacao */
+	for(index = 0; index < 64; index++)
+	{
+		printf("Index:%d\n",index);
+		PrintBitBoard(ClearMask[index]);
+		printf("\n");
+	}
+	getch();
 	return 0;
 }
