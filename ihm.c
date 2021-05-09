@@ -6,7 +6,38 @@
 
 // A func,a'o InitSq120To64() na'o foi mostrada
 int ihm()
-{	int index = 0;
+{	
+	/*  Inicio da Aula 11 */
+	int PieceOne = rand();
+	int PieceTwo = rand();
+	int PieceThree = rand();
+	int PieceFour = rand();
+	
+	printf("PieceOne:%X\n",PieceOne);
+
+	int Key = PieceOne ^ PieceTwo ^ PieceThree ^ PieceFour;
+	int TempKey = PieceOne;
+	TempKey  ^= PieceTwo;
+	TempKey  ^= PieceThree; 
+	TempKey  ^= PieceFour; 
+
+	printf("Key:%X\n",Key);
+	printf("TempKey:%X\n",TempKey);
+
+	/* Mostrando o recurso chave tempora'ria */
+	TempKey  ^= PieceThree;/* Repete a operacao */ 
+	printf("Key:%X\n",Key);
+	printf("TempKey:%X\n",TempKey);
+	
+	/* Mostrando o recurso chave tempora'ria */
+	TempKey  ^= PieceThree;/* Repete a operacao */ 
+	printf("Key:%X\n",Key);
+	printf("TempKey:%X\n",TempKey);
+/* Repete a operacao */
+	
+	/* fim da aula 11 */
+
+	int index = 0;
 	for(index = 0; index < BRD_SQ_NUM; ++index)
 	{
 		if(index%10==0) printf("\n");
