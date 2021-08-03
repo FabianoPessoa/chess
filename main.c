@@ -6,9 +6,6 @@
 #include"defs.h"
 
 int main() {
-	printf("\n ==============================\n");	
-	printf("\n ----:Programa funciona:-------\n");
-	printf("\n ------------------------------\n");
 	/* Carrega os nu'mero do dois tabuleiros */
 	printf("\n -------:AllInit:-------\n");
 	AllInit();
@@ -16,11 +13,9 @@ int main() {
 	U64 playBitBoard = 0ULL;	/*  Ainda na'o foi usada */
 
 //	getch();
-	/* Criei essa func,a'o para na'o encher
-	// main.c com programas que na'o sejam 
-	// chamadas de func,o'es */
+	//playBitBoard |= (1ULL << SQ64(D2));	
 	ihm();							/* Imprime os bitmap 64 */
 	//getch();
-	
+	playBitBoard |= (1ULL << SQ64(D2));	
 	return 0;
 }
