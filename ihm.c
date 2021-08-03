@@ -1,7 +1,7 @@
 /* Co'digo ihm.c */
 /*					ihm()						*/
 #include <stdio.h>
-#include <conio.h>
+//#include <conio.h>
 #include "defs.h"
 
 // A func,a'o InitSq120To64() na'o foi mostrada
@@ -57,7 +57,7 @@ int ihm()
 	// Essa e' da aula anterior
 	printf("\nStart:\n\n");
 	PrintBitBoard(playBitBoard);
-	getch();
+	//getch();
 
 	playBitBoard |= (1ULL << SQ64(D2)); 
 	/* Equivale a:
@@ -66,12 +66,12 @@ int ihm()
 	*/
 	printf("D2 Adicionado:\n\n");
 	PrintBitBoard(playBitBoard);
-	getch();
+//	getch();
 
 	playBitBoard |= (1ULL << SQ64(G2));
 	printf("G2 Adicionado:\n\n");
 	PrintBitBoard(playBitBoard);
-	getch();
+//	getch();
 
 	//Nova implementac,a'o
 	printf("\n Impreme em D2, D3, D4 \n");
@@ -82,7 +82,7 @@ int ihm()
 	//Novar implementac,a'o
 	printf("\n");
 	PrintBitBoard(playBitBoard);
-	getch();
+//	getch();
 
 	int count = CNT(playBitBoard);
 
@@ -102,13 +102,13 @@ int ihm()
 		sq64 = POP(&playBitBoard);
 		printf("popped:%d\n", sq64);
 		PrintBitBoard(playBitBoard);
-		getch();
+	//	getch();
 	}
 	//retire se na'o for windows
 	printf("\n Inserindo X em 61");
 	SETBIT(playBitBoard, 61);
 	PrintBitBoard(playBitBoard);
-	getch();
+	//getch();
 
 	/* Nova implementacao */
 	for(index = 0; index < 64; index++)
@@ -117,6 +117,6 @@ int ihm()
 		PrintBitBoard(ClearMask[index]);
 		printf("\n");
 	}
-	getch();
+	//getch();
 	return 0;
 }
