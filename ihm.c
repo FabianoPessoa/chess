@@ -110,13 +110,20 @@ int ihm()
 	PrintBitBoard(playBitBoard);
 	//getch();
 
-	/* Nova implementacao */
+	/* Nova implementacao  aula 10 */
+	printf("\n Implementação aula 10");
 	for(index = 0; index < 64; index++)
 	{
 		printf("Index:%d\n",index);
 		PrintBitBoard(ClearMask[index]);
 		printf("\n");
 	}
-	//getch();
+/* Nova implementacao  aula 10 */
+	for(index = 0; index < 64; index++)
+	{
+		printf("Index:%d\n",index);
+		PrintBitBoard(SetMask[index]);
+		printf("\n");
+	}	//getch();
 	return 0;
 }

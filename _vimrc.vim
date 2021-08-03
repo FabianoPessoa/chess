@@ -173,4 +173,5 @@ endif
 :e! Makefile
 :tabnew
 :e! readme.txt
-
+:tabnew
+:e! makefile
